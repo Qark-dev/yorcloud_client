@@ -1,9 +1,9 @@
-var cacheName = 'egui-template-pwa';
+var cacheName = 'yorcloud_client-pwa';
 var filesToCache = [
   './',
   './index.html',
-  './eframe_template.js',
-  './eframe_template_bg.wasm',
+  './yorcloud_client.js',
+  './yorcloud_client.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */

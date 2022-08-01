@@ -1,6 +1,6 @@
 {
-    "name": "Egui Template PWA",
-    "short_name": "egui-template-pwa",
+    "name": "Yor Cloud Client PWA",
+    "short_name": "yorcloud-client-pwa",
     "icons": [{
       "src": "./icon-256.png",
         "sizes": "256x256",
