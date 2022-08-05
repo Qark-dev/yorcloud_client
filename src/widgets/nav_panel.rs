@@ -10,7 +10,7 @@ pub fn nav_panel(_client: &mut crate::YorCloudApp, ctx: &Context) {
                 .on_hover_cursor(CursorIcon::Text);
 
             let is_dark = ui.visuals().dark_mode;
-            let text = if is_dark { "🌙" } else { "☀" };
+            let text = if !is_dark { "🌙" } else { "☀" };
             if ui.selectable_label(false, text).clicked() {
                 if is_dark {
                     ctx.set_visuals(Visuals::light());
