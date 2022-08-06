@@ -2,7 +2,7 @@
 name = "yorcloud_client"
 default-run = "yorcloud_client_bin"
 version = "0.1.0"
-authors = ["Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
+authors = ["Qark-dev <qarkdev@gmail.com>", "Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
 edition = "2021"
 rust-version = "1.60"
 
