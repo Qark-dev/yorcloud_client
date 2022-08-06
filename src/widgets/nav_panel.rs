@@ -11,13 +11,21 @@ pub fn nav_panel(_client: &mut crate::YorCloudApp, ctx: &Context) {
 
             let is_dark = ui.visuals().dark_mode;
             let text = if !is_dark { "🌙" } else { "☀" };
-            if ui.selectable_label(false, text).clicked() {
+            if ui
+                .selectable_label(false, text)
+                .on_hover_text(if !is_dark {
+                    "switch to dark theme"
+                } else {
+                    "switch to light theme"
+                })
+                .clicked()
+            {
                 if is_dark {
                     ctx.set_visuals(Visuals::light());
                 } else {
                     ctx.set_visuals(Visuals::dark());
                 }
-            };
+            }
         });
     });
 }
