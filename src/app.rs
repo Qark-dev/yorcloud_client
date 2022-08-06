@@ -1,12 +1,9 @@
 /// We derive Deserialize/Serialize so we can persist app state on shutdown.
 #[derive(serde::Deserialize, serde::Serialize, Default)]
 #[serde(default)] // if we add new fields, give them default values when deserializing old state
-pub struct YorCloudApp {}
-
-impl Default for YorCloudApp {
-    fn default() -> Self {
-        Self {}
-    }
+pub struct YorCloudApp {
+    #[serde(skip)]
+    pub assets: crate::assets::Assets,
 }
 
 impl YorCloudApp {

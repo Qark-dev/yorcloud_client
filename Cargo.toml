@@ -15,9 +15,11 @@ path = "src/main.rs"
 [lib]
 crate-type = ["cdylib", "rlib"]
 
-
 [dependencies]
+derive_assets = { path = "src/assets/derive_assets" }
 egui = "0.18.0"
+egui_extras = { version = "0.18.0", features = ["svg", "image"] }
+image = { version = "0.24", features = ["png"] }
 eframe = { version = "0.18.0", features = ["persistence"] }
 serde = { version = "1", features = ["derive"] } # You only need this if you want app persistence
 
