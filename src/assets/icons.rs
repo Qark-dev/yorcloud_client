@@ -11,6 +11,10 @@ pub struct Icons {
     pub status: HashMap<Status, RetainedImage>,
 }
 
+impl Icons {
+    pub const SIZE: egui::Vec2 = egui::Vec2::new(22., 22.);
+}
+
 impl Default for Icons {
     fn default() -> Self {
         Self {
