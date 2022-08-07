@@ -1,9 +1,9 @@
 var cacheName = 'yorcloud_client-pwa';
 var filesToCache = [
-  './',
-  './index.html',
-  './yorcloud_client.js',
-  './yorcloud_client.wasm',
+  '',
+  'index.html',
+  'yorcloud_client.js',
+  'yorcloud_client_bg.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */
